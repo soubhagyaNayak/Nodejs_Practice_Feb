@@ -10,8 +10,13 @@ let fs=require('fs');
 //     console.log('Task done')
 // })
 
-fs.readFile('city.json','utf-8',(err,data)=>{
-    if(err) throw err;
-    console.log(data);
+// fs.readFile('city.json','utf-8',(err,data)=>{
+//     if(err) throw err;
+//     console.log(data);
+// })
+
+
+fs.rename('mycode.txt','myfile.xml',()=>{
+    console.log('File renamed');
 })
 
