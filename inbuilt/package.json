@@ -4,7 +4,8 @@
   "description": "md for markdown",
   "main": "fs.js",
   "scripts": {
-   "start":"node staticapi.js"
+   "start":"node staticapi.js",
+   "dev":" node http.js"
   },
   "author": "",
   "license": "ISC"
