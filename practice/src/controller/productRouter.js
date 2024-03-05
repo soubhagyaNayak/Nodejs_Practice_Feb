@@ -1,6 +1,9 @@
 let express=require('express');
 let productRouter=express.Router();
-
+let menu=[
+    {name:'Category',link:"/category"},
+    {name:'Products',link:"/products"},
+];
 const products=(
     [
         {
@@ -518,7 +521,7 @@ const products=(
     );
 
 productRouter.route('/').get((req,res)=>{
-    res.send(products);
+    res.render('product',{title:'Product Page',products,menu});
 });
 productRouter.route('/details').get((req,res)=>{
     res.send('Products Details');

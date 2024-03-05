@@ -23,9 +23,12 @@ const category=([
         "thumb":"https://i.ibb.co/r3SZq8S/footware.jpg"
     }
 ]);
-
+let menu=[
+    {name:'Category',link:"/category"},
+    {name:'Products',link:"/products"},
+];
 categoryRouter.route('/').get((req,res)=>{
-    res.render('category',{title:'Category Page',category});
+    res.render('category',{title:'Category Page',category,menu});
 });
 categoryRouter.route('/details').get((req,res)=>{
     res.send('Category Details');

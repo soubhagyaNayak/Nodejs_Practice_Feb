@@ -8,6 +8,10 @@ let categoryRouter = require('./src/controller/categoryRouter');
 let productRouter = require('./src/controller/productRouter');
 let morgan = require('morgan');
 
+let menu=[
+    {name:'Category',link:"/category"},
+    {name:'Products',link:"/products"},
+];
 app.use(morgan('common', { stream: fs.createWriteStream('./app.log') }));
 
 //static file path
@@ -17,7 +21,7 @@ app.set('view engine','ejs');
 
 
 app.get('/', (req, res) => {
-    res.render('index',{title:'Home Page'});
+    res.render('index',{title:'Home Page',menu});
 });
 
 app.use('/category', categoryRouter);
