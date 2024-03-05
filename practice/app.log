@@ -1,0 +1,9 @@
+::1 - - [05/Mar/2024:18:14:17 +0000] "GET /category HTTP/1.1" 200 14579
+::1 - - [05/Mar/2024:18:14:17 +0000] "GET /css/bootstrap.min.css HTTP/1.1" 404 160
+::1 - - [05/Mar/2024:18:14:17 +0000] "GET /js/bootstrap.min.js HTTP/1.1" 404 158
+::1 - - [05/Mar/2024:18:17:10 +0000] "GET /category HTTP/1.1" 200 14319
+::1 - - [05/Mar/2024:18:17:10 +0000] "GET /css/bootstrap.min.css HTTP/1.1" 404 160
+::1 - - [05/Mar/2024:18:17:10 +0000] "GET /js/bootstrap.min.js HTTP/1.1" 404 158
+::1 - - [05/Mar/2024:18:17:55 +0000] "GET /category HTTP/1.1" 200 13779
+::1 - - [05/Mar/2024:18:17:55 +0000] "GET /css/bootstrap.min.css HTTP/1.1" 404 160
+::1 - - [05/Mar/2024:18:17:55 +0000] "GET /js/bootstrap.min.js HTTP/1.1" 404 158
