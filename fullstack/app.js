@@ -5,6 +5,16 @@ let fs=require('fs');
 const PORT = process.env.PORT || 5678;
 const app = express();
 
+let menu=[
+    {
+        name:'category',
+        link:'/category'
+    },
+     {
+        name:'product',
+        link:'/product'
+     }
+]
 let morgan=require('morgan');
 app.use(morgan('common',{stream:fs.createWriteStream('./app.log')}));
 
@@ -15,10 +25,10 @@ app.set('views','./src/views');
 app.set('view engine','ejs');
 
 app.get('/',(req,res)=>{
-    res.render('index')
+    res.render('index',{title:"Home Page",menu});
 })
-const categoryRouter = require("./src/controller/categoryRouter.js");
-const productRouter = require("./src/controller/productRouter.js");
+let categoryRouter = require("./src/controller/categoryRouter.js")(menu);
+let productRouter = require("./src/controller/productRouter.js")(menu);
 // const { StreamDescription } = require('mongodb');
 app.use('/category', categoryRouter);
 app.use('/product', productRouter);

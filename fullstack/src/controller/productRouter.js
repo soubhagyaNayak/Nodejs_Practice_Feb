@@ -1,7 +1,7 @@
 const express = require('express');
-let productRouter=express.Router();
+let productRouter = express.Router();
 
-const product=[
+const product = [
     {
         "id": 1,
         "product_name": "Girls top",
@@ -59,7 +59,7 @@ const product=[
     },
     {
         "id": 6,
-        "display_name":"Green Crop Top",
+        "display_name": "Green Crop Top",
         "product_name": "Girls top",
         "category": "Fashion",
         "category_id": 1,
@@ -126,7 +126,7 @@ const product=[
     },
     {
         "id": 12,
-        "display_name":"Blue Demin",
+        "display_name": "Blue Demin",
         "product_category": "Jeans",
         "category": "Fashion",
         "category_id": 1,
@@ -286,7 +286,7 @@ const product=[
         "category_id": 1,
         "Price": 1500,
         "Size": "L",
-        "Image": "https://i.ibb.co/xFQ7w0t/sm1.jpg" ,
+        "Image": "https://i.ibb.co/xFQ7w0t/sm1.jpg",
         "Color": "Peach",
         "Brand": "Van Heusen"
     },
@@ -308,7 +308,7 @@ const product=[
         "category_id": 1,
         "Price": 200,
         "Size": "S",
-        "Image": "https://i.ibb.co/S54x490/sm8.jpg" ,
+        "Image": "https://i.ibb.co/S54x490/sm8.jpg",
         "Color": "White",
         "Brand": "Raymond"
     },
@@ -319,21 +319,21 @@ const product=[
         "category_id": 1,
         "Price": 800,
         "Size": "M",
-        "Image":"https://i.ibb.co/N6dtKNM/sm7.jpg" ,
+        "Image": "https://i.ibb.co/N6dtKNM/sm7.jpg",
         "Color": "Black",
         "Brand": "Park Avenue"
     },
-     {
+    {
         "id": 30,
         "product_name": "Men's Shirt",
         "category": "Fashion",
         "category_id": 1,
         "Price": 1200,
         "Size": "M",
-        "Image": "https://i.ibb.co/7bJHyHy/sm4.jpg" ,
+        "Image": "https://i.ibb.co/7bJHyHy/sm4.jpg",
         "Color": "Fern",
         "Brand": "Tomy Hilfiger"
-    }, 
+    },
     {
         "id": 31,
         "product_name": "Men's Shirt",
@@ -341,10 +341,10 @@ const product=[
         "category_id": 1,
         "Price": 1300,
         "Size": "M",
-        "Image": "https://i.ibb.co/KDWj1HQ/sm5.jpg" ,
+        "Image": "https://i.ibb.co/KDWj1HQ/sm5.jpg",
         "Color": "BLue-White",
         "Brand": "Levi's"
-    }, 
+    },
     {
         "id": 32,
         "product_name": "Men's Shirt",
@@ -352,10 +352,10 @@ const product=[
         "category_id": 1,
         "Price": 2300,
         "Size": "L",
-        "Image":"https://i.ibb.co/BLr2WBn/sm6.jpg" ,
+        "Image": "https://i.ibb.co/BLr2WBn/sm6.jpg",
         "Color": "Black-Ash",
         "Brand": "Parx"
-    }, 
+    },
     {
         "id": 33,
         "product_name": "Men's Shirt",
@@ -363,7 +363,7 @@ const product=[
         "category_id": 1,
         "Price": 1800,
         "Size": "S",
-        "Image":  "https://i.ibb.co/02S5qLt/sm9.jpg" ,
+        "Image": "https://i.ibb.co/02S5qLt/sm9.jpg",
         "Color": "Blue-Ash",
         "Brand": "Ajio"
     },
@@ -374,7 +374,7 @@ const product=[
         "category_id": 1,
         "Price": 1800,
         "Size": "S",
-        "Image":  "https://i.ibb.co/02S5qLt/sm9.jpg" ,
+        "Image": "https://i.ibb.co/02S5qLt/sm9.jpg",
         "Color": "Blue-Ash",
         "Brand": "Ajio"
     },
@@ -385,7 +385,7 @@ const product=[
         "category_id": 1,
         "Price": 1800,
         "Size": "S",
-        "Image":  "https://i.ibb.co/02S5qLt/sm9.jpg" ,
+        "Image": "https://i.ibb.co/02S5qLt/sm9.jpg",
         "Color": "Blue-Ash",
         "Brand": "Ajio"
     },
@@ -395,21 +395,21 @@ const product=[
         "product_name": "Women's Jeans",
         "category": "Fashion",
         "category_id": 1,
-         "Price": 1000,
+        "Price": 1000,
         "Size": "M",
-        "Image":"https://i.ibb.co/k0mKWfx/wj7.jpg" ,
+        "Image": "https://i.ibb.co/k0mKWfx/wj7.jpg",
         "Color": "BLue",
         "Brand": "Lee"
-    },   
+    },
 
     {
         "id": 36,
         "product_name": "Women's Jeans",
-         "category": "Fashion",
-         "category_id": 1,
+        "category": "Fashion",
+        "category_id": 1,
         "Price": 1600,
         "Size": "S",
-        "Image": "https://i.ibb.co/bF0JH6S/w9.jpg" ,
+        "Image": "https://i.ibb.co/bF0JH6S/w9.jpg",
         "Color": "BLack",
         "Brand": "Levi's"
     },
@@ -420,7 +420,7 @@ const product=[
         "category_id": 1,
         "Price": 2000,
         "Size": "S",
-        "Image":  "https://i.ibb.co/M7Sg9DP/wj6.jpg" ,
+        "Image": "https://i.ibb.co/M7Sg9DP/wj6.jpg",
         "Color": "Sky Blue",
         "Brand": "Tommy Hilfiger"
 
@@ -432,13 +432,13 @@ const product=[
         "category_id": 1,
         "Price": 2500,
         "Size": "L",
-        "Image": "https://i.ibb.co/yBK9S07/wj2.jpg" ,
+        "Image": "https://i.ibb.co/yBK9S07/wj2.jpg",
         "Color": "Grey",
         "Brand": "Calvin Klein"
 
     },
-    
-     {
+
+    {
         "id": 40,
         "product_name": "Washing Machine",
         "category": "Electronics",
@@ -450,7 +450,7 @@ const product=[
         "company": "LG"
     },
     {
-        "id":41 ,
+        "id": 41,
         "product_name": "Washing Machine",
         "category": "Electronics",
         "category_id": 2,
@@ -461,12 +461,12 @@ const product=[
         "company": "Lloyd"
     },
     {
-        "id":42 ,
+        "id": 42,
         "product_name": "Washing Machine",
         "category": "Electronics",
         "category_id": 2,
         "Price": 15000,
-        "Image":"https://i.ibb.co/NrHbwwD/w3.jpg" ,
+        "Image": "https://i.ibb.co/NrHbwwD/w3.jpg",
         "Mode": "Automatic",
         "Color": "Grey",
         "company": "Lloyd"
@@ -488,7 +488,7 @@ const product=[
         "category": "Electronics",
         "category_id": 2,
         "Price": 25000,
-        "Image":"https://i.ibb.co/zrLv8Bj/w5.jpg" ,
+        "Image": "https://i.ibb.co/zrLv8Bj/w5.jpg",
         "style": "Single Door",
         "Color": "Metal Black",
         "company": "Whirlpool"
@@ -499,7 +499,7 @@ const product=[
         "category": "Electronics",
         "category_id": 2,
         "Price": 3000,
-        "Image": "https://i.ibb.co/Tw9cXss/w6.jpg", 
+        "Image": "https://i.ibb.co/Tw9cXss/w6.jpg",
         "Color": "Blue",
         "company": "Havells"
     },
@@ -509,15 +509,19 @@ const product=[
         "category": "Electronics",
         "category_id": 2,
         "Price": 4000,
-        "Image":"https://i.ibb.co/GHQjYvv/w7.jpg",
+        "Image": "https://i.ibb.co/GHQjYvv/w7.jpg",
         "Color": "Black",
         "company": "Bajaj"
     }
 ]
-productRouter.get('/', (req, res) => {
-    res.send(product);
-});
-productRouter.get('/details', (req, res) => {
-    res.send("Product Details");
-});
-module.exports=productRouter;
+function router(menu) {
+    productRouter.get('/', (req, res) => {
+        res.render('product', { title: 'Product Page', product,menu});
+    });
+    productRouter.get('/details', (req, res) => {
+        res.render("Product Details");
+    });
+    return productRouter;
+}
+
+module.exports = router;
